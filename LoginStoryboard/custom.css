@@ -1,0 +1,9 @@
+/* Storyboard and doc*/
+div[storydoc=screen] {
+  background-color: whitesmoke;
+}
+div[storydoc=screen] label
+{
+  width: 85px;
+  display: inline-block;
+}

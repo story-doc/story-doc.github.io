@@ -1,0 +1,6 @@
+Story: [US01] Product Search
+
+Main Scenario:
+       Given I open the website
+  M-1. When I search by model name
+       Then the system shows the product information

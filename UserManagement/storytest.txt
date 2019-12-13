@@ -1,0 +1,66 @@
+Story: [US01] List Users
+
+Main Scenario:
+       Given I am on a User List page
+  M-1. When I create a new user
+       Then the system displays User Creation Form
+ #M-2. Go to other Story [US02]
+
+Alternative Scenario 1:
+       Given I am on a User List page
+  A1-1. When I view the user
+       Then the system displays User Profile Page
+ #A1-2. Go to other Story [US03]
+
+Alternative Scenario 2:
+       Given I am on a User List page
+  A2-1. When I delete users
+       Then the system displays Confirmation Page for user deletion
+ #A2-2. Go to other Story [US04]
+
+Story: [US02] Create User
+
+Main Scenario:
+       Given I am on a User Creation Form
+  M-1. When I enter info and click Next
+       Then the system shows confirmation page with user info entered
+  M-2. When I click Register
+       Then the system shows a completion message
+
+Alternative Scenario 1: Continued from the M-1
+       Given the system shows confirmation page with user info entered
+  A1-1. When I click Edit
+       Then the system shows user information with prepopulated values in edit mode
+  A1-2. When I fix the user info
+ #A1-3. Go back to M-2
+
+Story: [US03] Edit User
+
+Main Scenario:
+       Given I am on a User Profile page
+  M-1. When I click Edit
+  M-2. And I select Update
+       Then the system displays a completion message for update
+       And I am on a User Profile page
+  M-3. When I click Edit
+ #M-4. Go back to M-2
+
+Alternative Scenario 1: Continued from the M-1
+  A1-1. When I select Cancel
+       Then the system does not display a completion message for update
+ #A1-2. Go back to M-1
+
+Story: [US04] Delete Users
+
+Main Scenario:
+       Given I am on a Confirmation page for user deletion
+  M-1. When I delete selected users
+  M-2. And I open User List
+       Then the system does not display the users in the list
+ #M-3. Go to other Story [US01]
+
+Alternative Scenario 1:
+       Given I am on a Confirmation page for user deletion
+  A1-1. When I cancel the deletion
+       Then the system displays the users in the list
+ #A1-2. Go to other Story [US01]

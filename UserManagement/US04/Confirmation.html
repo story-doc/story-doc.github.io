@@ -1,0 +1,28 @@
+<script src="https://cdn.jsdelivr.net/gh/story-doc/js@master/storydoc.js"></script>
+<script src="../custom.js"></script>
+<link rel="stylesheet" href="../custom.css"></link>
+
+<screen>
+  Are you sure you want to delete the following users?<br>
+  <ul>
+    <li>user1</li>
+    <li>user2</li>
+    <li>user3</li>
+  </ul>
+  <button>Delete</button>
+  <button>Cancel</button>
+</screen>
+
+<test>I am on a Confirmation page for user deletion</test>
+
+<action name="I delete selected users"
+        link="Completed.html">
+I confirm users listed and perform the user deletion.
+</action>
+
+<action name="I cancel the deletion"
+        id="US01"
+        link="../US01/UserList.html">
+I find some users selected mistakenly and go back to user list page to select users again.
+<test>the system displays the users in the list</test>
+</action>

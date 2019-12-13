@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+/* Storyboard and doc*/
+h1:not([storydoc]) {
+  color: crimson;
+  font: italic 36pt fantasy;
+  font-family: Impact, Charcoal, sans-serif;
+}
+h1[storydoc] {
+  color: royalblue;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+div[storydoc=screen] {
+  background-color: whitesmoke;
+}
+div[storydoc=screen] label,
+div[storydoc=screen] b
+{
+  width: 85px;
+  display: inline-block;
+}
+
+/* Storydoc only */
+span[storydoc=note] {
+  color: seagreen;
+}
+pre[storydoc=test] {
+  background-color: lightyellow;
+}

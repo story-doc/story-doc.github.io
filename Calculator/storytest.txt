@@ -1,0 +1,41 @@
+# Acceptance Test Scenarios for Calculator Stories
+Given the system loads test data
+
+Story: [US01] Perform Simple Calculation (簡易版電卓)
+
+Main Scenario:
+  M-1. When Enter <First Number>
+  M-2. And Select a <Operator>
+       Then the operator symbol is displayed.
+  M-3. When Enter <Second Number>
+  M-4. And Perform Calculation
+       Then calculated <Result> is shown.
+       Examples:
+       | First Number | Operator | Second Number | Result |
+       | 1            | +        | 2             | 3      |
+       | 3            | -        | 1             | 2      |
+       | 2            | *        | 3             | 6      |
+       | 6            | /        | 2             | 3      |
+
+Alternative Scenario 1: Continued from the M-2
+       Given the operator symbol is displayed.
+  A1-1. When Clear Memory
+       Then the memory is cleared.
+ #A1-2. Go back to M-1
+
+Story: [US02] Perform Statistical Calculation (関数電卓)
+
+Main Scenario:
+       Given scientific option is visible.
+  M-1. When Select Scientific
+       Then the screen is changed to Scientific mode.
+ #M-2. Go to other Story [US01]
+
+Story: [US03] Display Version (バージョン表示)
+
+Main Scenario:
+       Given About Calculator menu is visible.
+  M-1. When Select "About Calculator"
+       Then a popup is opened.
+       And version number is displayed.
+  M-2. When Confirm Version

@@ -1,0 +1,37 @@
+<script src="https://cdn.jsdelivr.net/gh/story-doc/js@master/storydoc.js"></script>
+<script src="custom.js"></script>
+<link rel="stylesheet" href="custom.css"></link>
+
+<screen style="border:0px; background-color:white;">
+  <h1>User Management Stories</h1>
+  This document defines stories and scenarios to manage users.
+</screen>
+
+<action name="List Users"
+        link="US01/UserList.html">
+As an <role extend="User">Admin User</role>,
+I want to view all users
+so that I can manage the users.
+</action>
+
+<action name="Create User"
+        link="US02/CreateForm.html">
+As an <role>Admin User</role>,
+I want to create a new user
+so that I can register new members into this system.
+</action>
+
+<action name="Edit User"
+        link="US03/ViewForm.html">
+As an <role>Admin User</role>,
+I want to edit user profile of existing user
+so that I can keep up to date.
+</action>
+
+<action name="Delete Users"
+        link="US04/Confirmation.html">
+As an <role>Admin User</role>,
+I want to delete users
+so that unregistered users cannot use the system.<br>
+This story starts after the admin selected users to be deleted.
+</action>

@@ -1,0 +1,20 @@
+Story: [US01] Product Search
+
+Main Scenario:
+       Given I open the website
+  M-1. When I enter an exact model name
+       Then the system shows the product information
+
+Alternative Scenario 1:
+       Given I open the website
+  A1-1. When I enter a partial model name
+       Then the system shows a list of products
+  A1-2. When I select a product
+       Then the system shows the product information
+
+Exception Scenario 1:
+       Given I open the website
+  E1-1. When I search with an empty keyword
+       Then the system shows an error message
+  E1-2. When I go back to the search form
+ #E1-3. Go back to M-1

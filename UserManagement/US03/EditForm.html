@@ -1,0 +1,22 @@
+<script src="https://cdn.jsdelivr.net/gh/story-doc/js@master/storydoc.js"></script>
+<script src="../custom.js"></script>
+<link rel="stylesheet" href="../custom.css"></link>
+
+<screen class="editForm">
+  <button>Update</button>
+  <button>Cancel</button>
+</screen>
+
+<action name="I select Update"
+        link="ViewForm.html?message=User profile has been updated successfully!<br><br>">
+I modify and save the changes.<br>
+Then the system displays the user information in readonly mode.
+<test>the system displays a completion message for update</test>
+</action>
+
+<action name="I select Cancel"
+        link="ViewForm.html">
+I modify some information but cancel the changes.<br>
+Then the system displays the original user information in readonly mode.
+<test>the system does not display a completion message for update</test>
+</action>

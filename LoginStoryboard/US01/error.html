@@ -1,0 +1,16 @@
+<script src="https://cdn.jsdelivr.net/gh/story-doc/js@master/storydoc.js"></script>
+<script src="../custom.js"></script>
+<link rel="stylesheet" href="../custom.css"></link>
+
+<screen>
+  The user ID or password is wrong. Please try again.<br>
+  <button>Back</button>
+</screen>
+
+<test>the system displays an error message</test>
+
+<action name="I can try again"
+        gwt="Then"
+        link="loginForm.html">
+The user confirms the error message and goes back to Login form.
+</action>

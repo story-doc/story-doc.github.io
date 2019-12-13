@@ -1,0 +1,28 @@
+<script src="https://cdn.jsdelivr.net/gh/story-doc/js@master/storydoc.js"></script>
+<script src="../custom.js"></script>
+<link rel="stylesheet" href="../custom.css"></link>
+
+<screen class="userList"></screen>
+
+<test>I am on a User List page</test>
+
+<action name="I create a new user"
+        id="US02"
+        link="../US02/CreateForm.html">
+I click Create button to create a new user.
+<test>the system displays User Creation Form</test>
+</action>
+
+<action name="I view the user"
+        id="US03"
+        link="../US03/ViewForm.html">
+I click the user ID link to view and edit the user information.
+<test>the system displays User Profile Page</test>
+</action>
+
+<action name="I delete users"
+        id="US04"
+        link="../US04/Confirmation.html">
+I select users and click Delete button to delete the users from the system.
+<test>the system displays Confirmation Page for user deletion</test>
+</action>

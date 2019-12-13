@@ -1,0 +1,7 @@
+Story: [US01] Log In
+
+Main Scenario:
+       Given I am a logged-out user
+       And I am on a login form
+  M-1. When I log in with my credentials
+  M-2. And I can browse the protected page

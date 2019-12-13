@@ -1,0 +1,60 @@
+<script src="https://cdn.jsdelivr.net/gh/story-doc/js@master/storydoc.js"></script>
+<link rel="stylesheet" href="custom.css"></link>
+
+<screen>
+<h1>Calculator (電卓) User Stories</h1>
+This document describes storybord of calculator usage.<br>
+本ドキュメントは電卓の使い方のストーリボードを記述します。
+</screen>
+
+<action name="Perform Simple Calculation (簡易版電卓)"
+        link="US01/blank.html">
+As a <role>Windows User</role>,
+I want to use calculator in standard mode
+so that I can perform four arithmetic operations.<br>
+Windowsユーザとして、
+私は四則演算を行うために、
+標準モードで電卓を使いたい。
+</action>
+
+<action name="Perform Statistical Calculation (関数電卓)"
+        link="US02/viewMenu.html"
+        include="US01">
+As a <role>Windows User</role>,
+I want to use calculator with statistical mode
+so that I can perform complex calculations.<br>
+Windowsユーザとして、
+私は複雑な計算を行うために、
+関数電卓モードで電卓を使いたい。
+</action>
+
+<action name="Display Version (バージョン表示)"
+        link="US03/helpMenu.html">
+As a <role>Windows User</role>,
+I want to check the current version number
+so that I can verify if I'm using the latest version.<br>
+Windowsユーザとして、
+私は最新のバージョンを使用しているかを確認するために、
+現在のバージョン番号をチェックしたい。
+</action>
+
+<note>
+<h2>Assumptions (前提)</h2>
+<ul>
+  <li>
+    Only main use cases are described.<br>
+    主なユースケースのみ記述します。
+  </li>
+  <li>
+    These Use Cases are "draft" version under discussion.<br>
+    これらのユースケースは、議論中の”ドラフト”バージョンです。
+  </li>
+  <li>
+    All screen images were captured on XP.<br>
+    すべての画面イメージは、XP上でキャプチャーしました。
+  </li>
+</ul>
+</note>
+
+<test># Acceptance Test Scenarios for Calculator Stories</test>
+<test>the system loads test data</test>

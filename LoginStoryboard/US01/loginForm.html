@@ -1,0 +1,27 @@
+<script src="https://cdn.jsdelivr.net/gh/story-doc/js@master/storydoc.js"></script>
+<script src="../custom.js"></script>
+<link rel="stylesheet" href="../custom.css"></link>
+
+<screen>
+  <label>User ID</label><input><br>
+  <label>Password</label><input><br>
+  <button>Submit</button>
+</screen>
+
+<action name="I enter ID and password"
+        link="protectedPage.html">
+The user enters valid user ID and password.
+</action>
+
+<exception name="I enter wrong password"
+        link="error.html">
+The user enters a wrong password at the first or second attempt.
+</exception>
+
+<exception name="I enter wrong password at the third attempt"
+        link="lockedOut.html">
+The user has already failed to log in two times,
+and this is the third attempt.
+</exception>
+
+<test>the system displays a login form</test>

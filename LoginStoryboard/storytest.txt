@@ -1,0 +1,23 @@
+Story: [US01] Log In
+
+Main Scenario:
+       Given I am a logged-out user
+       And I open a public page
+       And the system displayes a link to protected page
+  M-1. When I click the link
+       Then the system displays a login form
+  M-2. When I enter ID and password
+  M-3. And I can browse the protected page
+
+Exception Scenario 1: Continued from the M-1
+       Given the system displays a login form
+  E1-1. When I enter wrong password
+       Then the system displays an error message
+  E1-2. And I can try again
+ #E1-3. Go back to M-2
+
+Exception Scenario 2: Continued from the M-1
+       Given the system displays a login form
+  E2-1. When I enter wrong password at the third attempt
+       Then the system displays an error message
+  E2-2. And I can't try again
